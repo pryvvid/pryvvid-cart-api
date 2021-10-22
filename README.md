@@ -50,19 +50,25 @@ $ npm run start:prod
 ## Build from dockerfile
 
 ```
-docker build -t pryvvid/rs-cart-app .
+docker build -t pryvvid/pryvvid-cart-api .
 ```
 
 ## Running the docker image
 
 ```
-docker run -p 4000:4000 pryvvid/rs-cart-app
+docker run -p 4000:4000 pryvvid/pryvvid-cart-api
 ```
 
 ## Elastic beanstalk init
 
 ```
-eb init pryvvid-cart-app --region eu-west-1
+eb init pryvvid-cart-api --region eu-west-1
+```
+
+## Elastic beanstalk create develop enviroment
+
+```
+eb create develop --single --cname pryvvid-cart-api-develop
 ```
 
 ## Test
