@@ -1,0 +1,5 @@
+# node_modules will be installed within docker container by 'RUN npm install' command in dockerfile
+node_modules
+
+# 'RUN npm run build' command in dockerfile will generate 'dist' directory within docker container
+dist
